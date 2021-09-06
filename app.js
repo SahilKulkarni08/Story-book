@@ -37,7 +37,7 @@ app.get("/allpost/:postName",function(req,res){
 
         }
         else{
-            console.log("n");
+            console.log("nn");
         }
 
 

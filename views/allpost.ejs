@@ -1,0 +1,22 @@
+<%-include("partials/header")-%>
+<div class="container1">
+<h1>ALL POST</h1>  
+</div>
+<div class="container2">
+    <h3 style="color: #000000; font-family: 'Rajdhani', sans-serif;">Mark Zuckerberg</h3>
+    <p class="para"><%=home%></p>
+
+<% for(i=0;i<item.length;i++)
+    {%>
+        <h3 style="color: #000000; font-family: 'Rajdhani', sans-serif;"><%=item[i].title%></h3>
+        
+            <p class="para"><%=item[i].content.substring(0,100)+"..."%>
+            <a href="/allpost/<%=item[i].title%>">Read more</a>
+            
+            </p>
+    <%}%>
+</div>
+
+
+
+
